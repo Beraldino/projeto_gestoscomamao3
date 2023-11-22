@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+    <title>Gestos com a mão</title>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <div id="header">
+      <h2>App gestos com a mão</h2>
+      <div id="gestos">
+
+        <p>Vitória - &#9996</p>
+        <p>Legal - &#128077</p>
+        <p>Tranquilo - &#129304</p>
+
+      </div>
+      
+        </div>
+        <hr>
+<h2>Visualização da Webcam</h2>
+        <div id="camera">
+
+        </div>
+<br>
+        <div>
+          
+        <button onclick="takeSnapshot();"id="botao1" class="btn btn-seccess">Tirar foto</button>
+        <button onclick="check();"id="botao2" class="btn btn-seccess">Identificar gesto</button>
+        </div>
+
+       <h2>Você mostrou:</h2><span id="result_label"></span>
+       <hr>
+<h2>Foto</h2>
+      <div id="result"></div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
